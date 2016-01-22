@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+
+    android:background="@drawable/back_norm">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"
+        android:onClick="backtomain"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:id="@+id/btnClose"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/help_how_to_play"
+        android:onClick="howtoplay"
+        android:id="@+id/btnHowToPlay"
+        android:textSize="25dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_above="@+id/btnAboutTheGame"
+        android:layout_alignLeft="@+id/btnTips"
+        android:layout_alignStart="@+id/btnTips" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/help_tips"
+        android:onClick="tips"
+        android:id="@+id/btnTips"
+        android:textSize="25dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_above="@+id/btnHowToPlay"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/help_about_the_game"
+        android:onClick="aboutthegame"
+        android:id="@+id/btnAboutTheGame"
+        android:textSize="25dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnHowToPlay"
+        android:layout_alignStart="@+id/btnHowToPlay"
+        android:layout_marginBottom="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HELP"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_gravity="center"
+        android:id="@+id/textView5"
+
+        android:layout_alignBottom="@+id/imageButton8"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton8"
+        android:background="@drawable/logo_back"
+        android:layout_margin="20dp"
+        android:layout_alignTop="@+id/btnClose"
+        android:layout_alignLeft="@+id/btnTips"
+        android:layout_alignStart="@+id/btnTips" />
+
+</RelativeLayout>

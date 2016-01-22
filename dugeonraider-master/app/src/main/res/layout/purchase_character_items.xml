@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back_norm">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PURCHASE CHARACTER ITEMS"
+        android:layout_marginRight="30dp"
+        android:id="@+id/txtdungeongold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/btn_back"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_icon"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:onClick="backtostore"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        android:id="@+id/btn_back"
+        android:foregroundTint="@android:color/black"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+
+        android:id="@+id/imgview_mutator"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/textViewCOST"
+        android:layout_toLeftOf="@+id/txtdungeongold"
+        android:layout_toStartOf="@+id/txtdungeongold" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUY"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_equip"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="buymutator"
+        android:textSize="25dp"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:layout_alignBottom="@+id/txt_mutatorcost"
+        android:layout_alignLeft="@+id/radio_selection_group"
+        android:layout_alignStart="@+id/radio_selection_group" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="COST:"
+        android:id="@+id/textViewCOST"
+        android:textColor="#4C0000"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        android:textStyle="bold|italic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imgview_mutator"
+        android:layout_alignStart="@+id/imgview_mutator" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:buttonTint="@color/dungeon"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:checked="false"
+        android:textColor="#4C0000"
+        android:layout_alignRight="@+id/btn_back"
+        android:layout_alignEnd="@+id/btn_back"
+        android:layout_toEndOf="@+id/imgview_mutator"
+        android:id="@+id/radio_selection_group"
+        android:layout_alignTop="@+id/imgview_mutator"
+        android:layout_above="@+id/btn_equip">
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Your Gold :"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:id="@+id/txtequipgold"
+        android:layout_above="@+id/imgview_mutator"
+        android:layout_alignLeft="@+id/imgview_mutator"
+        android:layout_alignStart="@+id/imgview_mutator" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textView_gold_purchasemutators"
+        android:layout_alignRight="@+id/imageButton4"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:layout_alignTop="@+id/txtequipgold"
+        android:layout_toRightOf="@+id/txtequipgold"
+        android:layout_toEndOf="@+id/txtequipgold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:textColor="#4C0000"
+        android:textSize="20dp"
+
+        android:textStyle="bold|italic"
+        android:id="@+id/txt_mutatorcost"
+        android:layout_toRightOf="@+id/textViewCOST"
+        android:layout_toEndOf="@+id/textViewCOST"
+        android:layout_alignTop="@+id/textViewCOST" />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/logo_back"
+        android:layout_marginTop = "20dp"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginRight= "20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

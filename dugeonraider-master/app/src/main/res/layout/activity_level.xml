@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_norm">
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvl_go"
+        android:onClick="go"
+        android:textColor="#4C0000"
+        android:id="@+id/btn_go"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_below="@+id/radioGrouplevel"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radioGrouplevel"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvl_tutorial"
+        android:id="@+id/radiotutorial"
+        android:buttonTint="@color/dungeon"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:textColor="#4C0000"
+        android:checked="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btn_back"
+        android:layout_alignEnd="@+id/btn_back"
+        android:layout_marginTop="30dp" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvl_medium"
+        android:id="@+id/radiomedium"
+        android:buttonTint="@color/dungeon"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:checked="false"
+        android:textColor="#4C0000"
+        android:layout_below="@+id/radiotutorial"
+        android:layout_alignLeft="@+id/radiotutorial"
+        android:layout_alignStart="@+id/radiotutorial" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvl_easy"
+        android:id="@+id/radioeasy"
+        android:buttonTint="@color/dungeon"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:checked="false"
+        android:textColor="#4C0000"
+        android:layout_alignTop="@+id/radiotutorial"
+        android:layout_alignLeft="@+id/btn_go"
+        android:layout_alignStart="@+id/btn_go" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvl_hard"
+        android:id="@+id/radiohard"
+        android:buttonTint="@color/dungeon"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:checked="false"
+        android:textColor="#4C0000"
+        android:layout_below="@+id/radioeasy"
+        android:layout_alignLeft="@+id/radioeasy"
+        android:layout_alignStart="@+id/radioeasy" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lvl_store"
+        android:id="@+id/radiostore"
+        android:buttonTint="@color/dungeon"
+        android:textSize="25dp"
+        android:textColor="#4C0000"
+        android:textStyle="italic|bold"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_icon"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:onClick="backtonewgame"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#4C0000"
+        android:textStyle="bold|italic"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton6"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/logo_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textview_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEVEL"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#4C0000"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/radioGrouplevel"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
